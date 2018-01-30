@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # stop apache
-systemctl stop apache2.service
+service httpd stop
 
 # stop dotnet application
 SERVICE_ROOT=/home/ec2-user/aspnetcoreapp

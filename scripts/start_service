@@ -2,7 +2,7 @@
 cd /home/ec2-user/
 
 # start apache
-systemctl restart apache2.service
+service httpd restart
 
 SERVICE_ROOT=/home/ec2-user/aspnetcoreapp
 PID_FILE=$SERVICE_ROOT/service.pid
