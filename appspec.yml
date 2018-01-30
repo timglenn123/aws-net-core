@@ -1,31 +1,31 @@
 version: 0.0
 os: linux
 files:
-  - source: /home/ubuntu/MvcMovie/build_output
-    destination: /home/ubuntu/aspnetcoreapp
-  - source: /home/ubuntu/MvcMovie/scripts/virtualhost.conf
-    destination: /home/ubuntu/aspnetcoreapp
+  - source: /home/ec2-user/MvcMovie/build_output
+    destination: /home/ec2-user/aspnetcoreapp
+  - source: /home/ec2-user/MvcMovie/scripts/virtualhost.conf
+    destination: /home/ec2-user/aspnetcoreapp
 hooks:
   ApplicationStop:
-    - location: /home/ubuntu/scripts/stop_service
+    - location: /home/ec2-user/scripts/stop_service
       timeout: 300
       runas: root
 
   BeforeInstall:
-    - location: /home/ubuntu/scripts/remove_application
+    - location: /home/ec2-user/scripts/remove_application
       timeout: 300
       runas: root
 
   AfterInstall:
-    - location: /home/ubuntu/scripts/install_dotnetcore
+    - location: /home/ec2-user/scripts/install_dotnetcore
       timeout: 500
       runas: root
 
-    - location: /home/ubuntu/scripts/install_httpd
+    - location: /home/ec2-user/scripts/install_httpd
       timeout: 300
       runas: root
 
   ApplicationStart:
-    - location: /home/ubuntu/scripts/start_service
+    - location: /home/ec2-user/scripts/start_service
       timeout: 300
       runas: root
