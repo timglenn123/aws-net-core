@@ -1,10 +1,10 @@
 #!/bin/bash
-cd /home/ubuntu/
+cd /home/ec2-user/
 
 # start apache
 systemctl restart apache2.service
 
-SERVICE_ROOT=/home/ubuntu/aspnetcoreapp
+SERVICE_ROOT=/home/ec2-user/aspnetcoreapp
 PID_FILE=$SERVICE_ROOT/service.pid
 
 # shut down sevice if it is running already

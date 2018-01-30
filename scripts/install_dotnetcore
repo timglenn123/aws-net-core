@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/ubuntu/
+cd /home/ec2-user/
 
 # install dotnet core
 # https://www.microsoft.com/net/core#linuxubuntu
