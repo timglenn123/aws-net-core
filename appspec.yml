@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: MvcMovie/build_output
-    destination: aspnetcoreapp
+    destination: /home/ec2-user/aspnetcoreapp
   - source: scripts/virtualhost.conf
-    destination: aspnetcoreapp
+    destination: /home/ec2-user/aspnetcoreapp
 hooks:
   ApplicationStop:
     - location: scripts/stop_service
