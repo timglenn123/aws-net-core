@@ -12540,11 +12540,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/timglenn/Developer/Workspace/dotnet/MvcMovie/MvcMovie.csproj",
+      "projectUniqueName": "/Users/timglenn/Developer/Workspace/dotnet/aws-net-core/MvcMovie/MvcMovie.csproj",
       "projectName": "MvcMovie",
-      "projectPath": "/Users/timglenn/Developer/Workspace/dotnet/MvcMovie/MvcMovie.csproj",
+      "projectPath": "/Users/timglenn/Developer/Workspace/dotnet/aws-net-core/MvcMovie/MvcMovie.csproj",
       "packagesPath": "/Users/timglenn/.nuget/packages/",
-      "outputPath": "/Users/timglenn/Developer/Workspace/dotnet/MvcMovie/obj/",
+      "outputPath": "/Users/timglenn/Developer/Workspace/dotnet/aws-net-core/MvcMovie/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

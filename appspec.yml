@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: MvcMovie/build_output
+  - source: /home/ubuntu/MvcMovie/build_output
     destination: /home/ubuntu/aspnetcoreapp
   - source: scripts/virtualhost.conf
     destination: /home/ubuntu/aspnetcoreapp
