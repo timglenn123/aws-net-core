@@ -15,5 +15,5 @@ fi
 
 # un asp.core application
 cd $SERVICE_ROOT
-dotnet AspNetCoreWebApplication.dll &>$SERVICE_ROOT/service.log &
+dotnet MvcMovie.dll &>$SERVICE_ROOT/service.log &
 echo $! > $SERVICE_ROOT/service.pid
