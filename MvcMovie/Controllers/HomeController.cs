@@ -12,7 +12,7 @@ namespace MvcMovie.Controllers
     {
         public string Index()
         {
-            return "Lubba Dubba Lub Dub";
+            return "Lubba Dubba Lub Dub; I'm pickle Rick!";
         }
 
         public IActionResult About()
