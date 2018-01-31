@@ -4,7 +4,7 @@ cd /home/ec2-user/
 # install dotnet core
 # https://www.microsoft.com/net/core#linuxubuntu
 if [ ! -f /usr/bin/dotnet ]; then
-    yum install libunwind libicu
+    yum install libunwind -y
     
     curl -sSL -o dotnet.tar.gz https://go.microsoft.com/fwlink/?LinkID=835019
 
