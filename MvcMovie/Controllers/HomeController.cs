@@ -17,10 +17,9 @@ namespace MvcMovie.Controllers
 
         public string BubbleSort(string data)
         {
-            //Compare first two, take the largest as result
-            //take result compare to next element
-            //var elements = data.Split(',');
-            int[] elements = { 64, 52, 11, 23, 45, 6, 77, 3, 4, 2 };
+            if (data == null) return "missing querystring: ?data=5,4,2,6,7  to sort";
+            //Compare first two, take the largest as result and swap.
+            int[] elements = data.Split(',').Select<string, int>(int.Parse).ToArray();
 
             for (int i = 0; i < elements.Length - 1; i++)
             {
@@ -31,8 +30,7 @@ namespace MvcMovie.Controllers
                         var temp = elements[j];
                         elements[j] = elements[j + 1];  //since the next item is less than elements[i] lets set it as i+1
                         elements[j + 1] = temp; //move the original elements[i] into the new spot
-
-                        System.Diagnostics.Debug.WriteLine("element has been swapped: {0}", elements[j]);
+                        System.Diagnostics.Debug.WriteLine("element has been swapped: i{0}", elements[i]);
                     }
                 }
             }

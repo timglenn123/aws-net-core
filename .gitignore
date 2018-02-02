@@ -1,3 +1,2 @@
-MvcMovie/obj/**
-MvcMovie/bin/**
- 
+MvcMovie/obj/
+MvcMovie/bin/
